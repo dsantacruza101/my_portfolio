@@ -1,0 +1,52 @@
+<div class="grid">
+
+  <div class="col-6">
+    <nz-card class="contact__content">
+      <h5 class="align-content-center">Si quieres puedes contactar conmigo a traves de las redes sociales o puedes llenar el formulario de contacto. Te respondere lo antes posible. ¡Gracias!</h5>
+    </nz-card>
+  </div>
+
+  <div class="col-6">
+    <form nz-form [formGroup]="validateForm" (ngSubmit)="submitForm()">
+
+      <nz-form-item>
+        <nz-form-label [nzSm]="6" [nzXs]="24" nzRequired nzFor="name">Name</nz-form-label>
+        <nz-form-control nzHasFeedback [nzSm]="14" [nzXs]="24" nzErrorTip="Input is required">
+          <input nz-input id="name" formControlName="name" [ngModel]="''" required >
+        </nz-form-control>
+      </nz-form-item>
+
+      <nz-form-item>
+        <nz-form-label [nzSm]="6" [nzXs]="24" nzRequired nzFor="email">E-mail</nz-form-label>
+        <nz-form-control nzHasFeedback [nzSm]="14" [nzXs]="24" nzErrorTip="The input is not valid E-mail!">
+          <input nz-input formControlName="email" id="email" required />
+        </nz-form-control>
+      </nz-form-item>
+
+      <nz-form-item>
+        <nz-form-label [nzSm]="6" [nzXs]="24" nzRequired nzFor="subject">Subject</nz-form-label>
+        <nz-form-control nzHasFeedback [nzSm]="14" [nzXs]="24" nzErrorTip="Input is required">
+          <input nz-input formControlName="subject" id="subject" [ngModel]="''" required />
+        </nz-form-control>
+      </nz-form-item>
+
+
+
+      <nz-form-item>
+        <nz-form-label [nzSm]="6" [nzXs]="24" nzRequired>Comment</nz-form-label>
+        <nz-form-control [nzSm]="14" [nzXs]="24" nzHasFeedback nzErrorTip="Please write something here!">
+          <nz-textarea-count [nzMaxCharacterCount]="2000">
+            <textarea formControlName="comment" nz-input rows="2" placeholder="write any thing"></textarea>
+          </nz-textarea-count>
+        </nz-form-control>
+      </nz-form-item>
+
+      <nz-form-item nz-row class="register-area">
+        <nz-form-control [nzSpan]="14" [nzOffset]="6">
+          <button nz-button nzType="primary">Register</button>
+        </nz-form-control>
+      </nz-form-item>
+    </form>
+  </div>
+
+</div>

@@ -1,0 +1,40 @@
+[nz-button] {
+  margin-right: 8px;
+  margin-bottom: 12px;
+}
+
+nz-button-group [nz-button] {
+  margin-right: 0;
+}
+
+.home__image {
+  width: 65%;
+  height: 100%;
+}
+
+.ant-typography.ant-typography-success {
+  color: #1890ff;
+}
+
+.space-align-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.space-align-block {
+  margin: 8px 4px;
+  padding: 4px;
+  flex: none;
+}
+
+.space-align-block .mock-block {
+  display: inline-block;
+  padding: 32px 8px 16px;
+  background: rgba(150, 150, 150, 0.2);
+}
+
+.text__home {
+  text-align: center;
+}

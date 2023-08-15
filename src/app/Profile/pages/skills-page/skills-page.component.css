@@ -1,0 +1,7 @@
+.skills__name:hover {
+  transition: 0.5s;
+  transform: scale(1.19);
+  justify-content: center;
+  align-items: center;
+}
+
