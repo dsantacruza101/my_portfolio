@@ -1,21 +1,25 @@
-<nz-header>
-  <div nz-row [nzGutter]="{ xs: 8, sm: 16, md: 24, lg: 32 }">
+<nz-content class="position__content">
+  <nz-content class="mobil__menu">
+    <app-drawer></app-drawer>
+  </nz-content>
+  <nz-header class="desktop__menu">
+    <div nz-row>
 
-  <ul nz-menu nzTheme="dark" nzMode="horizontal">
-    <li nz-menu-item [routerLink]="'home'">Home</li>
-    <li nz-menu-item [routerLink]="'about'">About</li>
-    <li nz-menu-item [routerLink]="'projects'">Projects</li>
-    <li nz-menu-item [routerLink]="'skills'">Skills</li>
-    <li nz-menu-item [routerLink]="'contact'">Contact</li>
-  </ul>
-</div>
-</nz-header>
+      <ul nz-menu nzTheme="dark" nzMode="horizontal">
+        <li nz-menu-item [routerLink]="'home'">Home</li>
+        <li nz-menu-item [routerLink]="'about'">About</li>
+        <li nz-menu-item [routerLink]="'projects'">Projects</li>
+        <li nz-menu-item [routerLink]="'skills'">Skills</li>
+        <li nz-menu-item [routerLink]="'contact'">Contact</li>
+      </ul>
+    </div>
+  </nz-header>
   <nz-content class="container p-3">
-    <ng-container class="col-12 mt-5">
 
       <router-outlet></router-outlet>
 
-    </ng-container>
-
   </nz-content>
-  <nz-footer ><h4>Thank you for visiting my portfolio</h4></nz-footer>
+  <nz-footer>
+    <h4>Thank you for visiting my portfolio</h4>
+  </nz-footer>
+</nz-content>

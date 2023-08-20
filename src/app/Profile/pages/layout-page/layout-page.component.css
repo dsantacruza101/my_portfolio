@@ -1,7 +1,14 @@
+.position__content {
+  position: relative;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 7.5% auto 13%;
+
+}
 
 .container {
-  width: 100%;
-  height: 90vh;
+  height: 100%;
+  overflow-y: scroll;
   display: flex;
   align-items: center;
 }
@@ -19,6 +26,90 @@ nz-footer {
   position: absolute;
   bottom: 0;
   width: 100%;
+}
 
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+  .mobil__menu {
+    display: block;
+  }
+
+  .container {
+    overflow-y: scroll;
+  }
+
+  .desktop__menu {
+    display: none;
+  }
+}
+
+@media (min-width: 574px) and (max-width: 768px) {
+  .mobil__menu {
+    display: none;
+  }
+
+  .desktop__menu {
+    display: block;
+  }
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .mobil__menu {
+    display: none;
+  }
+
+  .desktop__menu {
+    display: block;
+  }
+
+  .container {
+    overflow-y: hidden;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .mobil__menu {
+    display: none;
+  }
+
+  .desktop__menu {
+    display: block;
+  }
+  .container {
+    overflow-y: hidden;
+  }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .mobil__menu {
+    display: none;
+  }
+
+  .desktop__menu {
+    display: block;
+  }
+  .container {
+    overflow-y: hidden;
+  }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  .mobil__menu {
+    display: none;
+  }
+
+  .desktop__menu {
+    display: block;
+  }
+  .container {
+    overflow-y: hidden;
+  }
 }
 

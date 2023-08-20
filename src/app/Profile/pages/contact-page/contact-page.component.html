@@ -1,12 +1,25 @@
-<div class="grid">
-
-  <div class="col-6">
+<div class="grid mobil__top">
+  <div class="col-12 md:col-12 lg:col-6">
     <nz-card class="contact__content">
-      <h5 class="align-content-center">Si quieres puedes contactar conmigo a traves de las redes sociales o puedes llenar el formulario de contacto. Te respondere lo antes posible. ¡Gracias!</h5>
+      <div class="flex justify-content-evenly flex-wrap card-container">
+
+        <h5 class="text-center">Si quieres puedes contactar conmigo a traves de las redes sociales o puedes llenar el formulario de contacto. Te respondere lo antes posible. ¡Gracias!</h5>
+
+
+        <span class="flex align-content-end flex-wrap w-3rem h-3rem border-round m-2 icon__linkedIn"></span>
+
+        <span class=" flex align-content-end flex-wrap w-3rem h-5rem border-round m-2 icon__gmail"></span>
+
+        <img class="flex align-content-end flex-wrap w-3rem h-5rem border-round m-2" src="assets/contact-icons/whats-app.svg" alt="HTML">
+
+        <img class="flex align-content-end flex-wrap w-3rem h-5rem border-round m-2" src="assets/contact-icons/instagram.svg" alt="HTML">
+
+      </div>
+
     </nz-card>
   </div>
 
-  <div class="col-6">
+  <div class="col-12 md:col-12 lg:col-6">
     <form nz-form [formGroup]="validateForm" (ngSubmit)="submitForm()">
 
       <nz-form-item>
@@ -41,9 +54,9 @@
         </nz-form-control>
       </nz-form-item>
 
-      <nz-form-item nz-row class="register-area">
-        <nz-form-control [nzSpan]="14" [nzOffset]="6">
-          <button nz-button nzType="primary">Register</button>
+      <nz-form-item>
+        <nz-form-control [nzSm]="14" [nzXs]="24">
+          <button nz-button class="contactButton__style" nzType="primary">Enviar</button>
         </nz-form-control>
       </nz-form-item>
     </form>

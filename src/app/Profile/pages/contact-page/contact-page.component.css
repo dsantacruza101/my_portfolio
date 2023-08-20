@@ -3,3 +3,73 @@
   padding: 1.1rem 0;
   border-radius: 0.5rem;
 }
+
+.ant-form-item {
+  margin-bottom: 14px;
+}
+
+.contactButton__style {
+  width: 100%;
+}
+
+.icon__linkedIn {
+  background-image: url(../../../../assets/contact-icons/linkedin.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.icon__linkedIn:hover, .icon__linkedIn:focus {
+  background-image: url(../../../../assets/contact-icons/linkedin-blue.svg);
+}
+
+.icon__gmail {
+  background-image: url(../../../../assets/contact-icons/gmail.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.icon__gmail:hover, .icon__gmail:focus {
+  background-image: url(../../../../assets/contact-icons/gmail-blue.svg);
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+  .mobil__top {
+    margin-top: 8.50rem;
+  }
+}
+
+@media (min-width: 574px) and (max-width: 768px) {
+  .mobil__top {
+    margin-top: none;
+  }
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .mobil__top {
+    margin-top: none;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .mobil__top {
+    margin-top: none;
+  }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .mobil__top {
+    margin-top: none;
+  }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  .mobil__top {
+    margin-top: none;
+  }
+}

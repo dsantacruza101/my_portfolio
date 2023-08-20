@@ -5,3 +5,44 @@
   align-items: center;
 }
 
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+  .mobil__top {
+    margin-top: 8.50rem;
+  }
+}
+
+@media (min-width: 574px) and (max-width: 768px) {
+  .mobil__top {
+    margin-top: none;
+  }
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .mobil__top {
+    margin-top: none;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .mobil__top {
+    margin-top: none;
+  }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .mobil__top {
+    margin-top: none;
+  }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  .mobil__top {
+    margin-top: none;
+  }
+}
