@@ -11,6 +11,7 @@
   overflow-y: scroll;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 [nz-menu] {

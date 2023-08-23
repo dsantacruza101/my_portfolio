@@ -31,6 +31,24 @@
 .icon__gmail:hover, .icon__gmail:focus {
   background-image: url(../../../../assets/contact-icons/gmail-blue.svg);
 }
+.icon__whatsApp {
+  background-image: url(../../../../assets/contact-icons/whats-app.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.icon__whatsApp:hover, .icon__whatsApp:focus {
+  background-image: url(../../../../assets/contact-icons/whatsapp-blue.svg);
+}
+.icon__instagram {
+  background-image: url(../../../../assets/contact-icons/instagram.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.icon__instagram:hover, .icon__instagram:focus {
+  background-image: url(../../../../assets/contact-icons/instagram-blue.svg);
+}
 
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {

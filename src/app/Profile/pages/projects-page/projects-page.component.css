@@ -1,0 +1,7 @@
+.WIP__image {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
+  object-fit: cover;
+}
