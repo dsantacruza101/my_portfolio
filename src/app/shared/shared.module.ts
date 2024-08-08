@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
+import { Error404PageComponentComponent } from './error404-page-component/error404-page-component.component';
 
 // NZ Modules
 
@@ -18,15 +19,16 @@ import { NzListModule } from 'ng-zorro-antd/list';
 import { NzDescriptionsModule } from 'ng-zorro-antd/descriptions';
 import { NzFormModule } from 'ng-zorro-antd/form';
 import { NzInputModule } from 'ng-zorro-antd/input';
-
-
-
-
-
-
+import { NzResultModule } from 'ng-zorro-antd/result';
 
 
 @NgModule({
+  declarations: [
+    Error404PageComponentComponent
+  ],
+  imports: [
+    NzResultModule,
+  ],
   exports: [
     NzLayoutModule,
     NzBreadCrumbModule,

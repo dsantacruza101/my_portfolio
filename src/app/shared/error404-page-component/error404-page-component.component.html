@@ -1,1 +1,11 @@
-<p>error404-page-component works!</p>
+<div class="align-content-center justify-content-center" style="height: 100vh;">
+  <nz-result nzStatus="404" nzTitle="404" nzSubTitle="Sorry, the page you visited does not exist.">
+    <div nz-result-extra>
+      <button
+        nz-button
+        nzType="primary"
+        (click)="goBackHome()"
+        >Back Home</button>
+    </div>
+  </nz-result>
+</div>

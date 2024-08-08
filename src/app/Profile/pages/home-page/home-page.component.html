@@ -9,21 +9,29 @@
 
       </div>
       <div *nzSpaceItem class="space-align-block">
-        <button nz-button nzType="primary" [nzSize]="size" nzShape="round">
+        <button
+          nz-button
+          nzType="primary"
+          [nzSize]="size"
+          nzShape="round"
+          (click)="onClickShowOption('resume')"
+          >
           Ver mi CV
-          <a href="https://drive.google.com/file/d/1WFbC--2NOgnoRyp9OsnJGs9JL6651-q9/view?usp=drive_link"
-            target="_blank"></a>
         </button>
 
-        <button nz-button nzShape="round">
+        <button
+          nz-button
+          nzShape="round"
+          (click)="onClickShowOption('github')"
+          >
           <span nz-icon nzType="github" nzTheme="outline"></span>
         </button>
 
-        <button nz-button nzShape="round">
+        <button nz-button nzShape="round" (click)="onClickShowOption('linkedIn')">
           <span nz-icon nzType="linkedin" nzTheme="fill"></span>
         </button>
 
-        <button nz-button nzShape="round">
+        <button nz-button nzShape="round" (click)="onClickShowOption('email')">
           <span nz-icon nzType="mail" nzTheme="outline"></span>
         </button>
       </div>

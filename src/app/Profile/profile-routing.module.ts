@@ -9,7 +9,7 @@ import { SkillsPageComponent } from './pages/skills-page/skills-page.component';
 
   const router: Routes = [
     {
-      path: '',
+      path: 'profile',
       component: LayoutPageComponent,
       children: [
         { path: 'home', component: HomePageComponent},
@@ -17,7 +17,6 @@ import { SkillsPageComponent } from './pages/skills-page/skills-page.component';
         { path: 'projects', component: ProjectsPageComponent},
         { path: 'skills', component: SkillsPageComponent},
         { path: 'contact', component: ContactPageComponent},
-        { path: '**', redirectTo: 'home'},
       ]
     }
   ]
