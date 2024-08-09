@@ -20,6 +20,8 @@ import { NzDescriptionsModule } from 'ng-zorro-antd/descriptions';
 import { NzFormModule } from 'ng-zorro-antd/form';
 import { NzInputModule } from 'ng-zorro-antd/input';
 import { NzResultModule } from 'ng-zorro-antd/result';
+import { NzPopoverModule } from 'ng-zorro-antd/popover';
+import { NzToolTipModule } from 'ng-zorro-antd/tooltip';
 
 
 @NgModule({
@@ -45,10 +47,12 @@ import { NzResultModule } from 'ng-zorro-antd/result';
     NzDescriptionsModule,
     NzFormModule,
     NzInputModule,
+    NzPopoverModule,
+    NzToolTipModule,
 
     // Reactive Form
 
-    ReactiveFormsModule
+    ReactiveFormsModule,
 
   ]
 })
