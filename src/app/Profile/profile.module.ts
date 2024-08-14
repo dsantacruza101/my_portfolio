@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { provideHttpClient, withJsonpSupport } from '@angular/common/http';
+
 
 import { LayoutPageComponent } from './pages/layout-page/layout-page.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
@@ -11,7 +13,6 @@ import { ContactPageComponent } from './pages/contact-page/contact-page.componen
 import { ProfileRoutingModule } from './profile-routing.module';
 import { SharedModule } from '../shared/shared.module';
 import { DrawerComponent } from './components/drawer/drawer.component';
-
 
 
 @NgModule({
@@ -25,10 +26,14 @@ import { DrawerComponent } from './components/drawer/drawer.component';
     DrawerComponent
   ],
   imports: [
+    SharedModule,
     CommonModule,
     ProfileRoutingModule,
-    SharedModule,
     RouterModule,
+
+  ],
+  providers: [
+    provideHttpClient(withJsonpSupport()),
 
   ]
 })
