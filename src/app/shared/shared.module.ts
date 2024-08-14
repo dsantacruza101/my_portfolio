@@ -1,5 +1,10 @@
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
+import { OverlayModule } from '@angular/cdk/overlay'
+import { BrowserModule } from '@angular/platform-browser';
+import { ScrollingModule } from '@angular/cdk/scrolling';
+
 import { Error404PageComponentComponent } from './error404-page-component/error404-page-component.component';
 
 // NZ Modules
@@ -22,7 +27,7 @@ import { NzInputModule } from 'ng-zorro-antd/input';
 import { NzResultModule } from 'ng-zorro-antd/result';
 import { NzPopoverModule } from 'ng-zorro-antd/popover';
 import { NzToolTipModule } from 'ng-zorro-antd/tooltip';
-
+import { NzSwitchModule } from 'ng-zorro-antd/switch';
 
 @NgModule({
   declarations: [
@@ -30,6 +35,11 @@ import { NzToolTipModule } from 'ng-zorro-antd/tooltip';
   ],
   imports: [
     NzResultModule,
+    BrowserModule,
+    ScrollingModule,
+    OverlayModule,
+    NzPopoverModule,
+
   ],
   exports: [
     NzLayoutModule,
@@ -49,10 +59,19 @@ import { NzToolTipModule } from 'ng-zorro-antd/tooltip';
     NzInputModule,
     NzPopoverModule,
     NzToolTipModule,
+    NzSwitchModule,
 
     // Reactive Form
 
+    FormsModule,
     ReactiveFormsModule,
+
+    BrowserModule,
+    ScrollingModule,
+    OverlayModule,
+
+  ],
+  providers: [
 
   ]
 })

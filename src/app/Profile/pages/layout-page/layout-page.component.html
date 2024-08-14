@@ -5,13 +5,31 @@
   <nz-header class="desktop__menu">
     <div nz-row>
 
-      <ul nz-menu nzTheme="dark" nzMode="horizontal">
-        <li nz-menu-item [routerLink]="'home'">Home</li>
-        <li nz-menu-item [routerLink]="'about'">About</li>
-        <li nz-menu-item [routerLink]="'projects'">Projects</li>
-        <li nz-menu-item [routerLink]="'skills'">Skills</li>
-        <li nz-menu-item [routerLink]="'contact'">Contact</li>
+      <ul
+        nz-menu
+        nzTheme="dark"
+        nzMode="horizontal"
+        nz-col
+        nzSm="20"
+        >
+          <li nz-menu-item [routerLink]="'home'">Home</li>
+          <li nz-menu-item [routerLink]="'about'">About</li>
+          <li nz-menu-item [routerLink]="'projects'">Projects</li>
+          <li nz-menu-item [routerLink]="'skills'">Skills</li>
+          <li nz-menu-item [routerLink]="'contact'">Contact</li>
       </ul>
+
+      <nz-switch
+        nz-col
+        nzSpan="4"
+        class="flex align-items-center justify-content-end"
+        [(ngModel)]="themeState"
+        (ngModelChange)="onThemeStateChange($event)"
+        [nzCheckedChildren]="checkedTemplate"
+        [nzUnCheckedChildren]="unCheckedTemplate">
+      </nz-switch>
+      <ng-template #checkedTemplate><span nz-icon nzType='check'></span></ng-template>
+      <ng-template #unCheckedTemplate><span nz-icon nzType='close'></span></ng-template>
     </div>
   </nz-header>
   <nz-content class="container p-3">
