@@ -10,6 +10,8 @@ nz-button-group [nz-button] {
 .home__image {
   width: 65%;
   height: 100%;
+  animation: fadeIn;
+  animation-duration: 6s;
 }
 
 .ant-typography.ant-typography-success {
@@ -21,6 +23,8 @@ nz-button-group [nz-button] {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  animation: bounceInLeft;
+  animation-duration: 2s;
 }
 
 .space-align-block {

@@ -11,6 +11,8 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  animation: jackInTheBox;
+  animation-duration: 2s;
 }
 
 .text__about {

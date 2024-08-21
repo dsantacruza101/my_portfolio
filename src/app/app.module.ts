@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { OverlayModule } from '@angular/cdk/overlay';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,15 +12,16 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ProfileModule } from './Profile/profile.module';
-import { Error404PageComponentComponent } from './shared/error404-page-component/error404-page-component.component';
 
 registerLocaleData(en);
 
 @NgModule({
   declarations: [
     AppComponent,
+
   ],
   imports: [
+    OverlayModule,
     BrowserModule,
     AppRoutingModule,
     FormsModule,

@@ -2,64 +2,125 @@
   <div class="col-12 md:col-12 lg:col-6">
     <nz-card class="contact__content">
       <div class="flex justify-content-evenly flex-wrap card-container">
+        <h5 class="text-center">
+          Si quieres puedes contactar conmigo a traves de las redes sociales o
+          puedes llenar el formulario de contacto. Te respondere lo antes
+          posible. ¡Gracias!
+        </h5>
 
-        <h5 class="text-center">Si quieres puedes contactar conmigo a traves de las redes sociales o puedes llenar el formulario de contacto. Te respondere lo antes posible. ¡Gracias!</h5>
+        <span
+          class="flex align-content-end flex-wrap w-3rem h-3rem border-round m-2 icon__linkedIn"
+          nz-popover
+          nzType="primary"
+          nzPopoverTitle="Title"
+          nzPopoverContent="Content"
+        ></span>
 
+        <span
+          class="flex align-content-end flex-wrap w-3rem h-5rem border-round m-2 icon__gmail"
+          nz-popover
+          nzType="primary"
+          nzPopoverTitle="Mi Correo electronico:"
+          nzPopoverContent="danielsantacruz0288@gmail.com"
+        ></span>
 
-        <span class="flex align-content-end flex-wrap w-3rem h-3rem border-round m-2 icon__linkedIn"></span>
-
-        <span class=" flex align-content-end flex-wrap w-3rem h-5rem border-round m-2 icon__gmail"></span>
-
-        <span class=" flex align-content-end flex-wrap w-3rem h-5rem border-round m-2 icon__whatsApp"></span>
+        <span
+          class="flex align-content-end flex-wrap w-3rem h-5rem border-round m-2 icon__whatsApp"
+          nz-popover
+          nzType="primary"
+          nzPopoverTitle="Mi Numero de Telefono"
+          nzPopoverContent="+503 77423721"
+        ></span>
 
         <!-- <span class=" flex align-content-end flex-wrap w-3rem h-5rem border-round m-2 icon__instagram"></span> -->
-
       </div>
-
     </nz-card>
   </div>
 
   <div class="col-12 md:col-12 lg:col-6">
     <form nz-form [formGroup]="validateForm" (ngSubmit)="submitForm()">
-
       <nz-form-item>
-        <nz-form-label [nzSm]="6" [nzXs]="24" nzRequired nzFor="name">Name</nz-form-label>
-        <nz-form-control nzHasFeedback [nzSm]="14" [nzXs]="24" nzErrorTip="Input is required">
-          <input nz-input id="name" formControlName="name" [ngModel]="''" required >
+        <nz-form-label [nzSm]="6" [nzXs]="24" nzRequired nzFor="name"
+          >Nombre</nz-form-label
+        >
+        <nz-form-control
+          nzHasFeedback
+          [nzSm]="14"
+          [nzXs]="24"
+          nzErrorTip="Input is required"
+        >
+          <input
+            nz-input
+            id="name"
+            formControlName="name"
+            [ngModel]="''"
+            required
+          />
         </nz-form-control>
       </nz-form-item>
 
       <nz-form-item>
-        <nz-form-label [nzSm]="6" [nzXs]="24" nzRequired nzFor="email">E-mail</nz-form-label>
-        <nz-form-control nzHasFeedback [nzSm]="14" [nzXs]="24" nzErrorTip="The input is not valid E-mail!">
+        <nz-form-label [nzSm]="6" [nzXs]="24" nzRequired nzFor="email"
+          >Correo</nz-form-label
+        >
+        <nz-form-control
+          nzHasFeedback
+          [nzSm]="14"
+          [nzXs]="24"
+          nzErrorTip="The input is not valid E-mail!"
+        >
           <input nz-input formControlName="email" id="email" required />
         </nz-form-control>
       </nz-form-item>
 
       <nz-form-item>
-        <nz-form-label [nzSm]="6" [nzXs]="24" nzRequired nzFor="subject">Subject</nz-form-label>
-        <nz-form-control nzHasFeedback [nzSm]="14" [nzXs]="24" nzErrorTip="Input is required">
-          <input nz-input formControlName="subject" id="subject" [ngModel]="''" required />
+        <nz-form-label [nzSm]="6" [nzXs]="24" nzRequired nzFor="subject"
+          >Asunto</nz-form-label
+        >
+        <nz-form-control
+          nzHasFeedback
+          [nzSm]="14"
+          [nzXs]="24"
+          nzErrorTip="Input is required"
+        >
+          <input
+            nz-input
+            formControlName="subject"
+            id="subject"
+            [ngModel]="''"
+            required
+          />
         </nz-form-control>
       </nz-form-item>
 
-
-
       <nz-form-item>
-        <nz-form-label [nzSm]="6" [nzXs]="24" nzRequired>Comment</nz-form-label>
-        <nz-form-control [nzSm]="14" [nzXs]="24" nzHasFeedback nzErrorTip="Please write something here!">
+        <nz-form-label [nzSm]="6" [nzXs]="24" nzRequired
+          >Comentario</nz-form-label
+        >
+        <nz-form-control
+          [nzSm]="14"
+          [nzXs]="24"
+          nzHasFeedback
+          nzErrorTip="Please write something here!"
+        >
           <nz-textarea-count [nzMaxCharacterCount]="2000">
-            <textarea formControlName="comment" nz-input rows="2" placeholder="write any thing"></textarea>
+            <textarea
+              formControlName="comment"
+              nz-input
+              rows="2"
+              placeholder="write anything"
+            ></textarea>
           </nz-textarea-count>
         </nz-form-control>
       </nz-form-item>
 
       <nz-form-item class="flex justify-content-center">
         <nz-form-control [nzSm]="14" [nzXs]="24">
-          <button nz-button class="contactButton__style" nzType="primary">Enviar</button>
+          <button nz-button class="contactButton__style" nzType="primary">
+            Enviar
+          </button>
         </nz-form-control>
       </nz-form-item>
     </form>
   </div>
-
 </div>

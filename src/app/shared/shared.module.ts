@@ -1,9 +1,6 @@
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
-import { OverlayModule } from '@angular/cdk/overlay'
-import { BrowserModule } from '@angular/platform-browser';
-import { ScrollingModule } from '@angular/cdk/scrolling';
 
 import { Error404PageComponentComponent } from './error404-page-component/error404-page-component.component';
 
@@ -34,12 +31,25 @@ import { NzSwitchModule } from 'ng-zorro-antd/switch';
     Error404PageComponentComponent
   ],
   imports: [
+    NzLayoutModule,
+    NzBreadCrumbModule,
+    NzMenuModule,
+    NzGridModule,
+    NzButtonModule,
+    NzIconModule,
+    NzTypographyModule,
+    NzImageModule,
+    NzSpaceModule,
+    NzCardModule,
     NzResultModule,
-    BrowserModule,
-    ScrollingModule,
-    OverlayModule,
+    NzDrawerModule,
+    NzListModule,
+    NzDescriptionsModule,
+    NzFormModule,
+    NzInputModule,
     NzPopoverModule,
-
+    NzToolTipModule,
+    NzSwitchModule,
   ],
   exports: [
     NzLayoutModule,
@@ -52,6 +62,7 @@ import { NzSwitchModule } from 'ng-zorro-antd/switch';
     NzImageModule,
     NzSpaceModule,
     NzCardModule,
+    NzResultModule,
     NzDrawerModule,
     NzListModule,
     NzDescriptionsModule,
@@ -65,10 +76,6 @@ import { NzSwitchModule } from 'ng-zorro-antd/switch';
 
     FormsModule,
     ReactiveFormsModule,
-
-    BrowserModule,
-    ScrollingModule,
-    OverlayModule,
 
   ],
   providers: [

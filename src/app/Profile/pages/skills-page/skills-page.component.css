@@ -9,10 +9,15 @@
   align-items: center;
 }
 
+.animation__tech {
+  animation: bounceInDown;
+  animation-duration: 3s;
+}
+
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
   .mobil__top {
-    margin-top: 8.50rem;
+    margin-top: 2.5rem;
   }
 }
 

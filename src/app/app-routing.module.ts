@@ -6,7 +6,7 @@ import { ProfileRoutingModule } from './Profile/profile-routing.module';
 const router: Routes = [
   {
     path: '',
-    redirectTo: '/profile',
+    redirectTo: 'profile/home',
     pathMatch: 'full'
   },
   {
